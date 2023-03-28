@@ -59,6 +59,19 @@
   }
 }
 
+@media not all and (min-resolution:.001dpcm) {
+  @supports (not (translate: none)) {
+    // Safari 14.0.x だけに適用される CSS
+    .p-abouts-points {
+      ul {
+        li {
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 960px) {
   .p-abouts-points {
     padding-bottom: 48px;
@@ -128,10 +141,31 @@
   max-width: 1232px;
   margin: 0 auto;
 
-  > div {  
+  > div {
     flex-basis: calc(50% - 28px);
   }
 }
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (not (translate: none)) {
+    // Safari 14.0.x だけに適用される CSS
+    .p-abouts-lowcode__inner {
+      > div:first-child {
+        margin-right: 56px;
+        margin-bottom: 56px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .p-abouts-lowcode__inner {
+      > div:first-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 960px) {
   .p-abouts-lowcode__inner {
@@ -161,7 +195,7 @@
 
 .p-abouts-lowcode__content {
   position: relative;
-  
+
   &::before {
     position: absolute;
     content: '';
@@ -221,6 +255,17 @@
   }
 }
 
+@media not all and (min-resolution:.001dpcm) {
+  @supports (not (translate: none)) {
+    // Safari 14.0.x だけに適用される CSS
+    .p-abouts-lowcode__merit {
+      > li {
+        margin: 9px 4px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .p-abouts-lowcode__merit {
     > li {
@@ -237,7 +282,6 @@
     }
   }
 }
-
 
 
 
@@ -286,6 +330,27 @@
   padding-bottom: 24px;
 }
 
+@media not all and (min-resolution:.001dpcm) {
+  @supports (not (translate: none)) {
+    // Safari 14.0.x だけに適用される CSS
+    .p-abouts-icons {
+      .p-abouts-icon {
+        margin-right: 16px;
+        margin-left: 16px;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      .p-abouts-icons {
+        .p-abouts-icon {
+          margin-right: 4px;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
 .p-abouts-icon {
   display: flex;
   flex-direction: column;
@@ -314,20 +379,20 @@
 @media screen and (max-width: 960px) {
   .p-abouts-icons {
     gap: 8px;
-  }
 
-  .p-abouts-icon {
-    width: 80px;
-    height: 80px;
+    .p-abouts-icon {
+      width: 80px;
+      height: 80px;
 
-    img {
-      width: 22px;
-      height: auto;
-    }
+      img {
+        width: 22px;
+        height: auto;
+      }
 
-    span {
-      font-size: 1rem;
-      font-weight: 600;
+      span {
+        font-size: 1rem;
+        font-weight: 600;
+      }
     }
   }
 }
