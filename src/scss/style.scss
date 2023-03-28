@@ -1,0 +1,34 @@
+@use './foundation/_variables.scss';
+@use './foundation/_nomalize.scss';
+@use './foundation/_base.scss';
+
+// -------------------------------------------
+
+/**
+ * layout
+ */
+@use './layout/_footer.scss';
+@use './layout/_header.scss';
+@use './layout/_records.scss';
+
+// -------------------------------------------
+
+/**
+ * object
+ */
+
+// component
+@use './object/component/_btn.scss';
+@use './object/component/_check.scss';
+@use './object/component/_heading.scss';
+@use './object/component/_monologue.scss';
+@use './object/component/_numbering.scss';
+@use './object/component/_point.scss';
+@use './object/component/_title.scss';
+
+// project
+@use './object/project/_abouts.scss';
+@use './object/project/_consultation.scss';
+@use './object/project/_firstview.scss';
+@use './object/project/_problems.scss';
+

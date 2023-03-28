@@ -1,0 +1,40 @@
+@use "./variables" as var;
+
+// $breakpoints: (
+//   'sm': 'screen and (min-width: 520px)',
+//   'md': 'screen and (min-width: 768px)',
+//   'lg': 'screen and (min-width: 960px)',
+//   'xl': 'screen and (min-width: 1200px)',
+// ) !default;
+
+/* ------------------------------
+　　ベース
+------------------------------ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-style: normal;
+  font-weight: 300;
+  color: var.$font-main-color;
+  counter-reset: number 0;
+}
+
+dd, dl, dt, h1, h2, h3, h4, li, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+em {
+  font-style: normal;
+}

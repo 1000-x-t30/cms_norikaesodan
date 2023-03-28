@@ -1,0 +1,167 @@
+.p-problems {
+  background-color: #ecfaff;
+}
+
+.p-problems-deta {
+  display: flex;
+  max-width: 1232px;
+  padding-top: 104px;
+  padding-right: 16px;
+  padding-bottom: 104px;
+  padding-left: 16px;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 4rem;
+    line-height: 1.5em;
+    padding-right: 2em;
+    flex-basis: 45%;
+  }
+  > div {
+    flex-basis: 55%;
+    min-width: 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 1.7em;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .p-problems-deta {
+    flex-direction: column;
+
+    h3 {
+      padding-right: 0px;
+      padding-bottom: 1.25em;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .p-problems-deta {
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    .p-problems-none {
+      display: none;
+    }
+  }
+}
+
+
+.p-problems-deta__image {
+  padding-top: 48px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.p-problems-feature {
+  background-color: #4f4f4f;
+  padding-top: 104px;
+  padding-right: 16px;
+  padding-bottom: 104px;
+  padding-left: 16px;
+  
+  h3 {
+    color: #fff;
+    font-size: 31px;
+    padding-bottom: 1.2em;
+    text-align: center;
+  }
+}
+
+.p-problems-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .p-problems-feature {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  .p-problems-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .p-problems-list__box {
+    min-width: 100%;
+  }
+}
+
+.p-problems-list__box {
+  background-color: #fff;
+  padding: 40px 32px 51px;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.05);
+  flex-basis: 33%;
+  max-width: 389px;
+
+  p {
+    font-size: 16px;
+    line-height: 1.7em;
+  }
+}
+
+.p-problems-consult__outer {
+  background: linear-gradient(
+    259.11deg,
+    #E8FFFC 10.63%,
+    #DDF3FF 49.22%,
+    #FFEDF3 89.46%);
+}
+
+.p-problems-consult {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding-top: 104px;
+  padding-right: 16px;
+  padding-bottom: 104px;
+  padding-left: 16px;
+  margin: 0 auto;
+  max-width: 1232px;
+}
+
+@media screen and (max-width: 960px) {
+  .p-problems-consult__outer {
+    background:
+      linear-gradient(
+        200.74deg,
+        #DEFCF8 33.44%,
+        #DCF2FF 50.58%,
+        #F5EEFF 62.53%,
+        #FFE3ED 70.42%);
+  }
+
+  .p-problems-consult {
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.p-problems-consult__box {
+  font-size: 16px;
+  line-height: 1.7em;
+
+  span {
+    display: inline-block;
+    padding-bottom: 2em;
+  }
+}

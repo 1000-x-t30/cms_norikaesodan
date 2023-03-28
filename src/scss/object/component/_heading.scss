@@ -1,0 +1,30 @@
+@use "../../foundation/variables" as var;
+
+.c-heading {
+  position: relative;
+  display: inline-block;
+  color:#fff;
+  background-color: var.$btn-color; 
+  font-size: 2rem;
+  line-height: 1.5em;
+  padding: 16px 48px;
+  border-radius: 48px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    translate: (-50%);
+    border-top: 23px solid var.$btn-color;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .c-heading {
+    font-size: 1.6rem;
+    padding: 16px 24px;
+  }
+}

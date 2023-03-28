@@ -1,0 +1,96 @@
+@use "../../foundation/variables" as var;
+
+.c-title {
+  text-align: center;
+  padding-bottom: 36px;
+}
+.c-title__inner {
+  display: inline-block;
+  position: relative;
+}
+
+.c-title-label {
+  display: inline-block;
+  padding: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  transform: matrix(1, 0, -0.21, 0.98, 0, 0);
+  text-align: center;
+  background: linear-gradient(261.81deg, #A8E8E0 4.18%, #B2E0FB 51.07%, #FFB7D1 99.96%),
+  linear-gradient(0deg, #fff, #fff);
+  box-shadow: 16px 16px 0px rgba(0, 0, 0, 0.05);
+
+  h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    background-color: #FFF;
+    color: var.$font-main-color;
+    padding: .8em 1.5em;
+    margin: 0;
+  }
+
+  span {
+    color: #C23570;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-title {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .c-title-label {
+    padding: 8px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.05);
+
+    h1 {
+      font-size: 3.2rem;
+      padding: .8em 1.2em;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .c-title {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .c-title-label {
+    display: block;
+    width: 100%;
+
+    h1 {
+      font-size: 2.4rem;
+      padding: .8em;
+    }
+  }
+}
+
+
+.c-title-heading {
+  display: inline-block;
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  background-color: var.$font-main-color;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 130%;
+  padding: 1em 1.5em;
+  transform:
+    matrix(1, -0.09, -0.12, 0.99, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .c-title-heading {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .c-title-heading {
+    left: -25px;
+  }
+}
+

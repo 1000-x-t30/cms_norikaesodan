@@ -1,0 +1,39 @@
+.c-point {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  font-weight: 300;
+  padding: 32px;
+  border-radius: 24px;
+
+  em {
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .c-point {
+    border-radius: 20px;
+  }
+}
+
+.c-point-label {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 27px;
+}
+
+.c-point-num {
+  
+  color: #c41134;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 8px;
+  order: -1;
+}
+
+.c-point-content {
+  font-size: 16px;
+  line-height: 1.7em;
+}

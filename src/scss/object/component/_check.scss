@@ -1,0 +1,131 @@
+@use "../../foundation/variables" as var;
+
+
+.c-check-label {
+  text-align: center;
+
+  p {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 0.75em;
+    margin-bottom: calc(37.5px - 0.75em);
+    border-bottom: 1px solid #00749A;
+  }
+
+  span {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-check-label {
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .c-check-label {
+    p {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+
+.c-check-list {
+  max-width: 396px;
+  margin: 0 auto;
+
+  li {
+    line-height: 30px;
+
+    
+    &:not(:last-of-type) {
+      padding-bottom: 11px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 21.5px;
+    }
+    
+    span {
+      font-size: 16px;
+      padding-left: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .c-check-list {
+    li {
+      span {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.c-check-list__box {
+  position: relative;
+  background-color: var.$bg-main-color;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  float: left;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #00749a;
+    width: 4px;
+  }
+  &::before {
+    top: 13px;
+    left: 8px;
+    height: 10px;
+    transform: rotateZ(-45deg);
+  }
+  &::after {
+    top: 8px;
+    left: 15px;
+    height: 14px;
+    transform: rotateZ(45deg);
+  }
+}
+
+.c-check-guide {
+  text-align: center;
+}
+
+.c-check-comment {
+  font-size: 1.6rem;
+  padding-bottom: 24px;
+
+  strong {
+    font-weight: 600;
+    color: #da226f;
+  }
+}
+
+.c-check-footing {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #666;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .c-check-comment {
+    font-size: 1.3rem;
+  }
+
+  .c-check-footing {
+    font-size: 1rem;
+  }
+}

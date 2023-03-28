@@ -1,0 +1,147 @@
+@use "../../foundation/variables" as var;
+
+.c-lg-monologue__radius {
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  padding: 56px;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.05);
+
+  .c-lg-monologue__dark {
+    color: var.$font-dark-color;
+  }
+  .c-lg-monologue__bright {
+    color: var.$font-bright-color;
+  }
+
+  span {
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      padding-bottom: 8px; 
+    }
+    &:last-of-type {
+      font-size: 2rem;
+      padding-top: 16px;
+      padding-bottom: 32px;
+    }
+  }
+
+  p {
+    padding-top: 16px;
+  }
+
+  small {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-lg-monologue__radius {
+    font-size: 1.6rem;
+    padding-top: 24px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    margin: 0 auto;
+
+    span {
+      display: block;
+
+      &:last-of-type {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.c-lg-monologue {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 4rem;
+  padding: 20px 32px;
+  line-height: 1.5em;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.05);
+
+  em {
+    color: #da226f;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .c-lg-monologue {
+    font-size: 2rem;
+  }
+}
+
+.c-md-monologue {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 31px;
+  padding: .8em 1.2em;
+  margin-bottom: 24px;
+  line-height: 1;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.05);
+
+  em {
+    color: #da226f;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .c-md-monologue {
+    font-size: 2rem;
+  }
+}
+
+
+.c-sm-monologue {
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  padding: .8em 1em;
+  margin-bottom: 24px;
+  border-radius: .5em;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.05);
+
+  .c-sm-monologue__dark {
+    color: var.$font-dark-color;
+  }
+  .c-sm-monologue__bright {
+    color: var.$font-bright-color;
+  }
+
+  span {
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      padding-bottom: 8px; 
+    }
+    &:last-of-type {
+      font-size: 20px;
+      padding-top: 16px;
+      padding-bottom: 32px;
+    }
+  }
+
+  small {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .c-sm-monologue {
+    font-size: 1.6rem;
+  }
+}
