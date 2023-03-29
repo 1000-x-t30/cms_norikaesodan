@@ -4,7 +4,7 @@
   position: relative;
   display: inline-block;
   color:#fff;
-  background-color: var.$btn-color; 
+  background-color: var.$btn-color;
   font-size: 2rem;
   line-height: 1.5em;
   padding: 16px 48px;
@@ -15,7 +15,9 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    translate: (-50%);
+    // translate: (-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     border-top: 23px solid var.$btn-color;
     border-right: 20px solid transparent;
     border-left: 20px solid transparent;
